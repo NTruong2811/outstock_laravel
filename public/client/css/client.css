@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+.header_top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    height: 80px;
+    background-color:#F5F5F5 ;
+}
+
+.header_top .nav nav ul{
+    display: flex;
+    
+}
+.header_top .nav {
+    line-height: 80px;
+}
+.header_top .logo {
+    line-height: 80px;
+}
+.header_top .user {
+    line-height: 80px;
+}
+.header_top .nav nav ul li{
+    color: black;
+   list-style: none;
+   padding: 0px 10px;
+}
+
+.header_top .nav nav ul li a{
+    color: black;
+}
+
+.header_top .user a{
+    color: black;
+}
+
+main{
+    margin: 0px 160px;
+}

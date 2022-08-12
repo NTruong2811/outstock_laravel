@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+  display:grid;
+  grid-template-columns: 1fr 4fr;
+ margin-top: 100px;
+}
+
+.filter{
+    background-color: #F5F5F5;
+    width: 280px;
+    height: 600px;
+}
+
+.filter h3{
+    margin: 20px;
+}
+
+.filter form {
+    padding: 0px 20px;
+}
+.products{
+ margin-left: 50px;
+}
+.list{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    position: relative;
+    padding-bottom: 150px;
+    margin-bottom: 50px;
+}
+.list a{
+    text-decoration: none;
+}
+.list .item {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 255px;
+    height: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.list .item .img{
+    width: 255px;
+    height: 325px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.list .item .img img{
+    width: 255px;
+    height: 285px;
+}
+.list .item .text{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.list .item .text h3{
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+.list .item .text button{
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.411);
+}
+svg{
+    display: none;
+}
+.pg{
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+}
+.pg p{
+    visibility: hidden;
+}
