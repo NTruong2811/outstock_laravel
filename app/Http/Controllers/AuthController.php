@@ -23,7 +23,7 @@ class AuthController extends Controller
         if (Auth::attempt($request->only('email', 'password'))) {
             return redirect()->route('client.home');
         } else {
-            return redirect()->route('auth.showLogin');
+            return redirect()->back();
         }
     }
     public function ShowRegister()
@@ -37,7 +37,6 @@ class AuthController extends Controller
         $user->role = 1;
         $user->password = bcrypt($request->password);
         $user->avt = "http://assets.stickpng.com/images/585e4bf3cb11b227491c339a.png";
-        // dd($user);
         $user->save();
         return redirect()->route('auth.login');
     }

@@ -32,13 +32,11 @@ class ShopController extends Controller
         ]);
      }else{
         $product_list = products::where('name','like',$request->search.'%')->paginate(9);
-
         return view('client.shop', [
             'product_list' => $product_list,
             'category_list'=> categories::all()
         ]);
      }
-
    }
 
    public function filter(Request $request){
